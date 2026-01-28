@@ -22,7 +22,7 @@ Dibuat dengan React + Vite, ini adalah showcase dari project, skill, dan karya y
 
 1. Clone repository ini:
 ```bash
-git clone https://github.com/gilangaqshal/portofolio.git
+git clone https://github.com/GilangAqshal/langsdev_portofolio.git
 cd portofolio
 ````
 
@@ -46,11 +46,11 @@ npm run build
 Hai, saya Gilang Aqshal Ilham Safatulloh  (username GitHub: `gilangaqshal`).
 Saya seorang Developer yang suka bikin aplikasi web ringan dengan tampilan modern dan performa tinggi. Scroll aja di project saya, dan jangan sungkan untuk reach out kalau ada pertanyaan!
 
-# * **Email:** [email\_farisedrik21@gmail.com](mailto:email_farisedrik21@gmail.com)
-# * **LinkedIn:** [linkedin.com/in/farisedp](https://www.linkedin.com/in/farisedp/)
-# * **Instagram:** @farisedrikprayoga
+# * **Email:** [gilangais16@gmail.com](mailto:email_gilangais16@gmail.com)
+# * **LinkedIn:** [linkedin.com/in/gilangaqshal](https://www.linkedin.com/in/gilangaqshal/)
+# * **Instagram:** @gilangaqshal_
 
 ---
 
 
-# [1]: https://github.com/rissss21/portofolio "GitHub - rissss21/portofolio"
+# [1]: https://github.com/gilangaqshal/portofolio "GitHub - gilangaqshal/portofolio"
