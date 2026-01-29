@@ -14,6 +14,7 @@ import AOS from 'aos';
 import ChatRoom from "./components/ChatRoom";
 import CircularGallery from "./components/CircularGallery/CircularGallery";
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+// import { listCertificates } from "./data";
 // ..
 AOS.init();
 
@@ -75,7 +76,7 @@ function App() {
         <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
-              <img src="./assets/faris1.png" className="w-10 rounded-md" />
+              <img src="./assets/langs2.png" className="w-10 rounded-md" />
               <q>Don't Let Money Change You</q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
@@ -127,7 +128,7 @@ function App() {
               handle="gilangaqshal"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="./assets/faris.png"
+              avatarUrl="./assets/langss.png"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
@@ -259,13 +260,12 @@ function App() {
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <h1 className="text-center text-4xl font-bold mb-10">
-            Certificate
-          </h1>
+          <h1 className="text-center text-4xl font-bold mb-10">Certificate</h1>
 
           {/* Container dengan tinggi tetap wajib ada agar OGL muncul */}
           <div style={{ height: "600px", position: "relative" }}>
             <CircularGallery
+              // items={listCertificates}
               bend={2}
               textColor="#ffffff"
               borderRadius={0.05}

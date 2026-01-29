@@ -371,7 +371,7 @@ class App {
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
       {
-        image: `https://picsum.photos/seed/1/800/600?grayscale`,
+        image: `/assets/certificate/PBL.jpg`,
         text: "Bridge",
       },
       {
