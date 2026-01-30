@@ -139,7 +139,7 @@ function App() {
 
         {/* awal tentang */}
         <div
-          className="mt-15 mx-auto w-full max-w-[1600px] rounded-3xl border-[5px] border-violet-500/40 shadow-[0_0_30px_rgba(168,85,247,0.4)] bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] p-6"
+          className="mt-15 mx-auto w-full max-w-[1600px] rounded-3xl border-[5px] border-indigo-500/40 shadow-[0_0_30px_rgba(99,102,241,0.4)] bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#1a1a1a] p-6"
           id="about"
         >
           <div
@@ -171,13 +171,13 @@ function App() {
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      20<span className="text-violet-500">+</span>
+                      20<span className="text-indigo-500">+</span>
                     </h1>
                     <p>Project Finished</p>
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3<span className="text-violet-500">+</span>
+                      3<span className="text-indigo-500">+</span>
                     </h1>
                     <p>Years of Experience</p>
                   </div>
@@ -188,7 +188,7 @@ function App() {
                     data-aos-once="true"
                   >
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3.81<span className="text-violet-500">/4.00</span>
+                      3.81<span className="text-indigo-500">/4.00</span>
                     </h1>
                     <p>GPA</p>
                   </div>
