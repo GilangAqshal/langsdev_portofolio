@@ -88,8 +88,8 @@ function App() {
               />
             </h1>
             <BlurText
-              text="A passionate application and web developer dedicated to crafting modern, high-performance digital experiences through innovative and user-friendly solutions."
-              delay={150}
+              text="Web Developer & Software Developer Enthusiast. Crafting high-performance digital solutions with a focus on innovation and seamless user experience."
+              delay={100}
               animateBy="words"
               direction="top"
               className=" mb-6"
