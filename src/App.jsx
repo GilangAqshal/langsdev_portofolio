@@ -161,7 +161,7 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="I’m Gilang Aqshal Ilham Safatulloh, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working with the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
+                  text="I’m Gilang Aqshal Ilham Safatulloh, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working withhh the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
                   delay={100}
                   animateBy="words"
                   direction="top"
