@@ -26,21 +26,8 @@ import Tools17 from "/assets/tools/php.png";
 import Tools18 from "/assets/tools/vite.png";
 import Tools19 from "/assets/tools/mysql.png";
 
-// // data.js
-// export const listCertificates = [
-//   {
-//     image: "/assets/certificate/PBL.jpg", // Tulis path string langsung diawali slash (/)
-//     text: "Sertifikat PBL",
-//   },
-//   {
-//     image: "/assets/certificate/Internship.jpg",
-//     text: "Internship Program",
-//   },
-//   {
-//     image: "/assets/certificate/CCNA.png",
-//     text: "CCNA Certification",
-//   }
-// ];
+
+
 
 export const listTools = [
   {

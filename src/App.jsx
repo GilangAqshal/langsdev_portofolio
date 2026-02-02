@@ -18,6 +18,42 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 
+const listCertificates = [
+  {
+    image: "/portofolio/assets/certificate/PBL.jpg",
+    text: "PBL Certificate",
+  },
+  {
+    image: "/portofolio/assets/certificate/Internship.jpg",
+    text: "Internship",
+  },
+  {
+    image: "/portofolio/assets/certificate/freeCodeWeb.png",
+    text: "FreeCodeCamp Web",
+  },
+  {
+    image: "/portofolio/assets/certificate/freeCodeJS.png",
+    text: "FreeCodeCamp JS",
+  },
+  {
+    image: "/portofolio/assets/certificate/DicodingJS.png",
+    text: "Dicoding JavaScript",
+  },
+  {
+    image: "/portofolio/assets/certificate/DicodingAI.png",
+    text: "Dicoding AI",
+  },
+  {
+    image: "/portofolio/assets/certificate/CCCNA.png",
+    text: "Cisco CCNA",
+  },
+  {
+    image: "/portofolio/assets/certificate/BWA.png",
+    text: "BuildWithAngga",
+  },
+];
+
+
 function App() {
   const aboutRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -161,7 +197,7 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="I’m Gilang Aqshal Ilham Safatulloh, a full-stack developer passionate about building modern, high-performance applications with an intuitive user experience. I enjoy working withhh the latest technologies like Artificial Intelligence, Machine Learning, and cloud-based development, blending creativity with precision to deliver impactful solutions. With over three years of experience and more than 20 completed projects, I’m committed to helping users and businesses grow in the digital era through functional, aesthetic, and scalable digital products."
+                  text="I am Gilang Aqshal Ilham Safatulloh, a passionate Full-Stack Developer dedicated to engineering high-performance modern applications with intuitive user experiences. With over three years of experience and a portfolio of 20+ successful projects, I bridge the gap between creativity and technical precision. I thrive on integrating cutting-edge technologies like AI, Machine Learning, and Cloud-based development to deliver scalable, aesthetic, and impactful solutions that help businesses flourish in the digital era."
                   delay={100}
                   animateBy="words"
                   direction="top"
@@ -255,22 +291,22 @@ function App() {
         {/* --- Awal Visual Showcase --- */}
         <div
           className="mt-32"
-          id="gallery"
+          id="certificate"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-once="true"
         >
           <h1 className="text-center text-4xl font-bold mb-10">Certificate</h1>
-
+      
           {/* Container dengan tinggi tetap wajib ada agar OGL muncul */}
           <div style={{ height: "600px", position: "relative" }}>
             <CircularGallery
-              // items={listCertificates}
-              bend={2}
+              items={listCertificates}
+              bend={1.5}
               textColor="#ffffff"
-              borderRadius={0.05}
-              scrollSpeed={2.5}
-              scrollEase={0.1}
+              borderRadius={0.015}
+              scrollSpeed={2}
+              scrollEase={0.8}
             />
           </div>
         </div>

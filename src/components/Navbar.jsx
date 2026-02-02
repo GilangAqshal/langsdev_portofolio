@@ -35,6 +35,7 @@ const Navbar = ({ hidden = false }) => {
         <li><a href="#home" className="sm:text-lg text-base font-medium">Home</a></li>
         <li><a href="#about" className="sm:text-lg text-base font-medium">About</a></li>
         <li><a href="#project" className="sm:text-lg text-base font-medium">Project</a></li>
+        <li><a href="#certificate" className="sm:text-lg text-base font-medium">Certificate</a></li>
         <li><a href="#contact" className="sm:text-lg text-base font-medium">Contact</a></li>
       </ul>
     </nav>

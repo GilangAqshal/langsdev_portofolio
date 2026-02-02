@@ -292,6 +292,7 @@ class Media {
   }
   onResize({ screen, viewport } = {}) {
     if (screen) this.screen = screen;
+
     if (viewport) {
       this.viewport = viewport;
       if (this.plane.program.uniforms.uViewportSizes) {
@@ -301,16 +302,33 @@ class Media {
         ];
       }
     }
+
+    // Skala dasar (responsif)
     this.scale = this.screen.height / 1500;
+
+    /**
+     * Rasio sertifikat:
+     * Mayoritas data kamu ada di range 1.4–1.5
+     * Kita pakai sweet spot 1.42 (landscape A4-ish)
+     */
+    const CERT_RATIO = 1.42;
+
+    // Tinggi stabil dulu (biar konsisten)
     this.plane.scale.y =
-      (this.viewport.height * (900 * this.scale)) / this.screen.height;
-    this.plane.scale.x =
-      (this.viewport.width * (700 * this.scale)) / this.screen.width;
+      (this.viewport.height * (650 * this.scale)) / this.screen.height;
+
+    // Lebar mengikuti rasio sertifikat
+    this.plane.scale.x = this.plane.scale.y * CERT_RATIO;
+
+    // Update uniform ukuran plane
     this.plane.program.uniforms.uPlaneSizes.value = [
       this.plane.scale.x,
       this.plane.scale.y,
     ];
+
+    // Spacing antar item
     this.padding = 2;
+
     this.width = this.plane.scale.x + this.padding;
     this.widthTotal = this.width * this.length;
     this.x = this.width * this.index;
