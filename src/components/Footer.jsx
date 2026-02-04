@@ -25,7 +25,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/gilangaqshal_/">
             <i className="ri-instagram-fill ri-2x"></i>
           </a>
-          <a href="https://www.youtube.com/Mamayo">
+          <a href="https://www.youtube.com/TheMamayo">
             <i className="ri-youtube-fill ri-2x"></i>
           </a>
           <a href="https://www.linkedin.com/in/gilangaqshal/">
