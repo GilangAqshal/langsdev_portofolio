@@ -176,7 +176,7 @@ export const listProyek = [
   {
     id: 1,
     image: Proyek1,
-    title: "AIS Detection App",
+    title: "Yeping! Application Web",
     subtitle: "A mobile application powered by Artificial Intelligence...",
     fullDescription:"A mobile application powered by Artificial Intelligence and Machine Learning, developed to assist in the early detection of Adolescent Idiopathic Scoliosis (AIS). By analyzing patient data and patterns, the app provides predictions that can help doctors and patients take preventive measures. This project demonstrates the role of AI in modern healthcare by improving accuracy, accessibility, and efficiency in medical diagnosis.",
     borderColor: "#3B82F6",
@@ -187,7 +187,7 @@ export const listProyek = [
   {
     id: 2,
     image: Proyek2,
-    title: "IoT Air Quality Monitoring",
+    title: "Freelance Website GramediaAcademy",
     subtitle: "A smart IoT system designed to measure and analyze air quality...",
     fullDescription:"A smart IoT system designed to measure and analyze air quality using sensors connected to a mobile application. The app provides real-time updates on air quality levels, empowering users to make healthier lifestyle decisions based on environmental conditions. This project showcases the potential of IoT in addressing environmental and public health issues.",
     borderColor: "#10B981",
@@ -220,7 +220,7 @@ export const listProyek = [
     {
     id: 5,
     image: Proyek5,
-    title: "Color Blindness Detection App",
+    title: "MyLibraryApps Java",
     subtitle: "A cross-platform application available on both mobile and desktop...",
     fullDescription:"A cross-platform application available on both mobile and desktop, created to help identify different types of color blindness through color recognition tests. The app provides users with instant results, making it useful for educational, medical, and self-assessment purposes. Its intuitive design and accessibility aim to support individuals in understanding and managing color vision deficiencies.",
     borderColor: "#3B82F6",
