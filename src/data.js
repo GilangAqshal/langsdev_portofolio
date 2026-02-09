@@ -166,7 +166,7 @@ export const listTools = [
 ];
 
 import Proyek1 from "/assets/proyek/proyek1.jpg";
-import Proyek2 from "/assets/proyek/proyek2.jpg";
+import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.jpg";
 import Proyek4 from "/assets/proyek/proyek4.jpg";
 import Proyek5 from "/assets/proyek/proyek5.jpg";
@@ -188,11 +188,11 @@ export const listProyek = [
     id: 2,
     image: Proyek2,
     title: "Freelance Website GramediaAcademy",
-    subtitle: "A smart IoT system designed to measure and analyze air quality...",
-    fullDescription:"A smart IoT system designed to measure and analyze air quality using sensors connected to a mobile application. The app provides real-time updates on air quality levels, empowering users to make healthier lifestyle decisions based on environmental conditions. This project showcases the potential of IoT in addressing environmental and public health issues.",
+    subtitle: "Web Company Profile GramediaAcademy yang dibuat...",
+    fullDescription:"Web Company Profile GramediaAcademy yang dibuat menggunakan Wordpress dan php untuk form pembayaran yang menggunakan payment gateway cahslezz.Dengan menggunakan elementor sebagai plugin builder page, Jadi seluruh page hampir dibuat menggunakan Elementor Plugin. ",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://gramediaacademy.com/",
     dad: "200",
   },
   {
