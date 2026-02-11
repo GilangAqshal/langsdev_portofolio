@@ -165,7 +165,7 @@ export const listTools = [
   },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.jpg";
+import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/proyek3.jpg";
 import Proyek4 from "/assets/proyek/proyek4.jpg";
@@ -176,12 +176,12 @@ export const listProyek = [
   {
     id: 1,
     image: Proyek1,
-    title: "Yeping! Application Web",
-    subtitle: "A mobile application powered by Artificial Intelligence...",
-    fullDescription:"A mobile application powered by Artificial Intelligence and Machine Learning, developed to assist in the early detection of Adolescent Idiopathic Scoliosis (AIS). By analyzing patient data and patterns, the app provides predictions that can help doctors and patients take preventive measures. This project demonstrates the role of AI in modern healthcare by improving accuracy, accessibility, and efficiency in medical diagnosis.",
+    title: "Yeping! – Social Media Clone X",
+    subtitle: "Aplikasi web interaktif berbasis Vanilla Javascript yang mereplikasi...",
+    fullDescription:"Yeping adalah aplikasi web yang dikembangkan menggunakan Vanilla JavaScript sebagai proyek tugas mata kuliah Struktur Data. Proyek ini mereplikasi fungsionalitas utama dari platform X (Twitter), termasuk manajemen data pengguna dan postingan. Seluruh data disimpan secara efisien menggunakan LocalStorage, memastikan persistensi data tanpa memerlukan backend eksternal.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://yeping.vercel.app/login.html",
     dad: "100",
   },
   {
@@ -189,7 +189,7 @@ export const listProyek = [
     image: Proyek2,
     title: "Freelance Website GramediaAcademy",
     subtitle: "Web Company Profile GramediaAcademy yang dibuat...",
-    fullDescription:"Web Company Profile GramediaAcademy yang dibuat menggunakan Wordpress dan php untuk form pembayaran yang menggunakan payment gateway cahslezz.Dengan menggunakan elementor sebagai plugin builder page, Jadi seluruh page hampir dibuat menggunakan Elementor Plugin. ",
+    fullDescription:"Proyek freelance untuk membangun website resmi Gramedia Academy. Website ini dikembangkan menggunakan WordPress dengan Elementor sebagai page builder utama untuk desain yang responsif dan estetis. Saya juga mengimplementasikan kustomisasi menggunakan PHP untuk mengintegrasikan sistem pembayaran otomatis melalui payment gateway Cashlez, memudahkan pengguna dalam melakukan transaksi kursus secara aman.",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
     url: "https://gramediaacademy.com/",
