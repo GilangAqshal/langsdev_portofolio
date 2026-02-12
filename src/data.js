@@ -167,7 +167,7 @@ export const listTools = [
 
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
-import Proyek3 from "/assets/proyek/proyek3.jpg";
+import Proyek3 from "/assets/proyek/Proyek3.png";
 import Proyek4 from "/assets/proyek/proyek4.jpg";
 import Proyek5 from "/assets/proyek/proyek5.jpg";
 import Proyek6 from "/assets/proyek/proyek6.jpg";
@@ -198,12 +198,12 @@ export const listProyek = [
   {
     id: 3,
     image: Proyek3,
-    title: "IoT Heartbeat Monitoring System",
-    subtitle: "An IoT-based healthcare project developed to measure and monitor...",
-    fullDescription:"An IoT-based healthcare project developed to measure and monitor heart rate in real-time. The system connects sensors to a local web server, enabling users and healthcare providers to track data directly from a web interface. This project highlights the integration of hardware and software to create efficient medical solutions that can be applied in local clinics or personal health monitoring.",
+    title: "Mie Ayam Bakso - Website for UMKM",
+    subtitle: "yang dirancang untuk memperluas jangkauan pasar UMKM sec..",
+    fullDescription:"Website ini merupakan platform informasi digital untuk unit usaha Mie Ayam Bakso Duo Putro. Dikembangkan menggunakan WordPress dengan bantuan Elementor Page Builder untuk menghasilkan desain yang informatif dan responsif di berbagai perangkat. Melalui proyek ini, saya mengelola seluruh proses publikasi mulai dari desain tata letak hingga deployment menggunakan layanan hosting InfinityFree, guna membantu pelaku usaha lokal memiliki identitas digital yang profesional.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://miebaksoduoputro.rf.gd/",
     dad: "300",
   },
   {
