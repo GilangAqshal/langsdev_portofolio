@@ -13,8 +13,9 @@ import Aurora from "./components/Aurora/Aurora";
 import AOS from 'aos';
 import ChatRoom from "./components/ChatRoom";
 import CircularGallery from "./components/CircularGallery/CircularGallery";
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// import { listCertificates } from "./data";
+import 'aos/dist/aos.css'; // You can lalso use <link> for styles
+import 'aos/dist/aos.css';
+
 // ..
 AOS.init();
 
@@ -311,6 +312,15 @@ function App() {
           </div>
         </div>
         {/* --- Akhir Visual Showcase --- */}
+
+        {/* --- PINDAHKAN SPOTIFY KE SINI --- */}
+        {/* <div className="mt-32 py-10 border-y border-zinc-800 bg-zinc-900/20" data-aos="zoom-in">
+          <div className="flex flex-col items-center">
+            <h2 className="text-xl font-semibold mb-6 opacity-80">Currently Vibing To</h2>
+            <SpotifyCard />
+          </div>
+        </div> */}
+        {/* --------------------------------- */}
 
         {/* awal Kontak */}
         <div className="kontak mt-32 sm:p-10 p-0" id="contact">
