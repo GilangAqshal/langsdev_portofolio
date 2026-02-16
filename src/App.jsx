@@ -13,7 +13,7 @@ import Aurora from "./components/Aurora/Aurora";
 import AOS from 'aos';
 import ChatRoom from "./components/ChatRoom";
 import CircularGallery from "./components/CircularGallery/CircularGallery";
-import 'aos/dist/aos.css'; // You can lalso use <link> for styles
+import 'aos/dist/aos.css'; // You can llalso use <link> for styles
 import 'aos/dist/aos.css';
 
 // ..
