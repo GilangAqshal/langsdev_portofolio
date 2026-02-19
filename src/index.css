@@ -5,3 +5,7 @@
     font-family: "Poppins", sans-serif;
   }
 }
+.spotify-widget img {
+  width: 500px; /* atau 100% */
+  border-radius: 16px;
+}

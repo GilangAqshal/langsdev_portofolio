@@ -15,6 +15,7 @@ import ChatRoom from "./components/ChatRoom";
 import CircularGallery from "./components/CircularGallery/CircularGallery";
 import 'aos/dist/aos.css'; // You can llalso use <link> for styles
 import 'aos/dist/aos.css';
+import "./index.css";
 
 // ..
 AOS.init();
@@ -314,12 +315,13 @@ function App() {
         {/* --- Akhir Visual Showcase --- */}
 
         {/* --- PINDAHKAN SPOTIFY KE SINI --- */}
-        {/* <div className="mt-32 py-10 border-y border-zinc-800 bg-zinc-900/20" data-aos="zoom-in">
-          <div className="flex flex-col items-center">
-            <h2 className="text-xl font-semibold mb-6 opacity-80">Currently Vibing To</h2>
-            <SpotifyCard />
-          </div>
-        </div> */}
+        <div className="spotify-widget flex items-center justify-center">
+        <a href="https://open.spotify.com/user/x3qpuc6fibvgyszpnzpzqyxc5">
+          <img src="https://spotify-recently-played-readme.vercel.app/api?user=x3qpuc6fibvgyszpnzpzqyxc5&count=3" />
+        </a>
+      </div>  
+
+
         {/* --------------------------------- */}
 
         {/* awal Kontak */}
