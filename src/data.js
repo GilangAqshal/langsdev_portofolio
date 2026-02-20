@@ -168,8 +168,8 @@ export const listTools = [
 import Proyek1 from "/assets/proyek/proyek1.png";
 import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/Proyek3.png";
-import Proyek4 from "/assets/proyek/proyek4.jpg";
-import Proyek5 from "/assets/proyek/proyek5.jpg";
+import Proyek4 from "/assets/proyek/Proyek4.png";
+import Proyek5 from "/assets/proyek/Proyek5.png";
 import Proyek6 from "/assets/proyek/proyek6.jpg";
 
 export const listProyek = [
@@ -210,22 +210,22 @@ export const listProyek = [
     id: 4,
     image: Proyek4,
     title: "Personal Web Portfolio",
-    subtitle: "An interactive web portfolio showcasing my professional journey...",
-    fullDescription:"An interactive web portfolio showcasing my professional journey, skills, and projects. Designed with a clean yet modern aesthetic, the portfolio highlights my technical expertise in web development, software engineering, and IoT. The site also serves as a central hub for potential employers and collaborators to explore my works, reflecting both my creativity and technical precision.",
+    subtitle: "Web portofolio interaktif yang dibangun menggunakan teknologi...",
+    fullDescription: "Sebuah platform portofolio digital yang dikembangkan menggunakan React, Vite, dan Tailwind CSS untuk menciptakan User Interface yang modern dan responsif. Proyek ini mengintegrasikan komponen dari ReactBits untuk meningkatkan interaktivitas visual, serta memanfaatkan Firebase sebagai sistem backend guna mendukung fitur chat room secara real-time. Situs ini dirancang untuk memamerkan keahlian teknis, proyek, dan perjalanan profesional saya dengan presisi teknis yang tinggi.",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    url: "http://localhost:5173/portofolio/",
     dad: "400",
   },
-    {
+  {
     id: 5,
     image: Proyek5,
     title: "MyLibraryApps Java",
-    subtitle: "A cross-platform application available on both mobile and desktop...",
-    fullDescription:"A cross-platform application available on both mobile and desktop, created to help identify different types of color blindness through color recognition tests. The app provides users with instant results, making it useful for educational, medical, and self-assessment purposes. Its intuitive design and accessibility aim to support individuals in understanding and managing color vision deficiencies.",
+    subtitle: "Aplikasi manajemen perpustakaan berbasis desktop yang menggunakan...",
+    fullDescription: "MyLibraryApps adalah solusi manajemen peminjaman buku perpustakaan yang dikembangkan menggunakan bahasa pemrograman Java melalui IDE NetBeans. Aplikasi ini mengintegrasikan berbagai library penting seperti JCalendar untuk manajemen tanggal, IReport untuk pembuatan laporan formal, serta MySQL Connector untuk persistensi data. Keunggulan sistem ini terletak pada metode peminjaman berbasis kode unik buku, yang menjamin akurasi data meskipun terdapat judul buku yang serupa, sehingga meminimalisir kesalahan dalam inventarisasi.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://youtu.be/_1Tvv3UwoN0?si=_VTIouyjxEdlVzN9",
     dad: "500",
   },
   {
