@@ -226,7 +226,7 @@ function App() {
                     data-aos-once="true"
                   >
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3.81<span className="text-indigo-500">/4.00</span>
+                      3.75<span className="text-indigo-500">/4.00</span>
                     </h1>
                     <p>GPA</p>
                   </div>
