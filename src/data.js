@@ -170,7 +170,7 @@ import Proyek2 from "/assets/proyek/proyek2.png";
 import Proyek3 from "/assets/proyek/Proyek3.png";
 import Proyek4 from "/assets/proyek/Proyek4.png";
 import Proyek5 from "/assets/proyek/Proyek5.png";
-import Proyek6 from "/assets/proyek/proyek6.jpg";
+import Proyek6 from "/assets/proyek/Proyek6.png";
 
 export const listProyek = [
   {
@@ -229,14 +229,14 @@ export const listProyek = [
     dad: "500",
   },
   {
-    id: 6,
-    image: Proyek6,
-    title: "Coffee Shop Website",
-    subtitle: "A fully functional website designed for a coffee shop, enabling...",
-    fullDescription:"A fully functional website designed for a coffee shop, enabling customers to explore the menu, learn about the shop’s story, and place orders online. The project focused on creating an attractive and modern interface, integrating responsive design for mobile and desktop, and ensuring smooth navigation for users. This website not only improved customer experience but also supported the coffee shop’s digital presence and business growth.",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
-    dad: "600",
-  },
+      id: 6,
+      image: Proyek6,
+      title: "Nutrilog – Smart Calorie Tracker",
+      subtitle: "Aplikasi mobile UI/UX modern yang membantu pengguna mengelola...",
+      fullDescription: "NutriLog adalah desain aplikasi mobile inovatif yang berfokus pada manajemen nutrisi dan penghitungan kalori harian secara presisi. Desain ini menawarkan fitur pelacakan makronutrisi lengkap (protein, karbohidrat, lemak) serta hidrasi harian. Keunggulan utamanya terletak pada kemudahan input data melalui pemindaian barcode produk, pengenalan makanan berbasis foto (AI Scanning), serta fitur kustomisasi resep pribadi. Proyek ini dirancang dengan antarmuka yang modern dan intuitif untuk mendukung gaya hidup sehat pengguna melalui teknologi visual yang user-friendly.",
+      borderColor: "#10B981",
+      gradient: "linear-gradient(180deg, #10B981, #000)",
+      url: "https://www.figma.com/proto/r4HVhxOS6wx0cPOG742jw6/NutriLog?node-id=45-88&p=f&t=pa5IBV6OVPP6u8U2-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=45%3A5&show-proto-sidebar=1",
+      dad: "600",
+    },
 ];
