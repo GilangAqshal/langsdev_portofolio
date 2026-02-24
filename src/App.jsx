@@ -22,35 +22,35 @@ AOS.init();
 
 const listCertificates = [
   {
-    image: "/portofolio/assets/certificate/PBL.jpg",
+    image: "assets/certificate/PBL.jpg",
     text: "PBL Certificate",
   },
   {
-    image: "/portofolio/assets/certificate/Internship.jpg",
+    image: "assets/certificate/Internship.jpg",
     text: "Internship",
   },
   {
-    image: "/portofolio/assets/certificate/freeCodeWeb.png",
+    image: "assets/certificate/freeCodeWeb.png",
     text: "FreeCodeCamp Web",
   },
   {
-    image: "/portofolio/assets/certificate/freeCodeJS.png",
+    image: "assets/certificate/freeCodeJS.png",
     text: "FreeCodeCamp JS",
   },
   {
-    image: "/portofolio/assets/certificate/DicodingJS.png",
+    image: "assets/certificate/DicodingJS.png",
     text: "Dicoding JavaScript",
   },
   {
-    image: "/portofolio/assets/certificate/DicodingAI.png",
+    image: "assets/certificate/DicodingAI.png",
     text: "Dicoding AI",
   },
   {
-    image: "/portofolio/assets/certificate/CCCNA.png",
+    image: "assets/certificate/CCCNA.png",
     text: "Cisco CCNA",
   },
   {
-    image: "/portofolio/assets/certificate/BWA.png",
+    image: "assets/certificate/BWA.png",
     text: "BuildWithAngga",
   },
 ];
