@@ -246,6 +246,46 @@ I am deeply committed to integrating cutting-edge technologies, such as AI and M
         </div>
         {/* akhir tentang */}
 
+        {/* awal skills */}
+        <section className="py-16 bg-[#0a0a0a] overflow-hidden" id="skills">
+          <div className="container mx-auto px-4 mb-10">
+            <h2 className="text-3xl font-bold text-center text-white">SKills</h2>
+          </div>
+
+          <div className="flex flex-col gap-8">
+            {/* Baris 1: Kanan ke Kiri */}
+            <div className="flex overflow-hidden group">
+              <div className="flex animate-marquee whitespace-nowrap pause-group-hover">
+                {[...listTools, ...listTools].map((skill, index) => (
+                  <div key={index} className="flex items-center gap-4 mx-4 p-4 bg-[#161616] rounded-xl border border-white/10 min-w-[200px]">
+                    <img src={skill.gambar} alt={skill.nama} className="w-10 h-10 object-contain" />
+                    <div className="flex flex-col">
+                      <span className="text-white font-medium">{skill.nama}</span>
+                      <span className="text-xs text-gray-500">{skill.ket}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Baris 2: Kiri ke Kanan */}
+            <div className="flex overflow-hidden group">
+              <div className="flex animate-marquee-reverse whitespace-nowrap pause-group-hover">
+                {[...listTools, ...listTools].reverse().map((skill, index) => (
+                  <div key={index} className="flex items-center gap-4 mx-4 p-4 bg-[#161616] rounded-xl border border-white/10 min-w-[200px]">
+                    <img src={skill.gambar} alt={skill.nama} className="w-10 h-10 object-contain" />
+                    <div className="flex flex-col">
+                      <span className="text-white font-medium">{skill.nama}</span>
+                      <span className="text-xs text-gray-500">{skill.ket}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* akhir skills */}
+
         {/* awal Proyek */}
         <div
           className="proyek mt-32 py-10"

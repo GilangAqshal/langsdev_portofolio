@@ -33,7 +33,7 @@ export const listTools = [
   {
     id: 1,
     gambar: Tools1,
-    nama: "Visual Studio Code",
+    nama: "VS Code",
     ket: "Code Editor",
     dad: "100",
   },
