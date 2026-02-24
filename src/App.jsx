@@ -199,11 +199,13 @@ function App() {
                 </h2>
 
                 <BlurText
-                  text="I am Gilang Aqshal Ilham Safatulloh, a passionate Full-Stack Developer dedicated to engineering high-performance modern applications with intuitive user experiences. With over three years of experience and a portfolio of 20+ successful projects, I bridge the gap between creativity and technical precision. I thrive on integrating cutting-edge technologies like AI, Machine Learning, and Cloud-based development to deliver scalable, aesthetic, and impactful solutions that help businesses flourish in the digital era."
+                  text="I am Gilang Aqshal Ilham Safatulloh, a passionate Full-Stack Developer dedicated to engineering high-performance modern applications with intuitive user experiences.
+With over three years of experience and a proven track record of 15+ successful projects, I excel at bridging the gap between creative vision and technical precision.
+I am deeply committed to integrating cutting-edge technologies, such as AI and Machine Learning, to deliver scalable, aesthetically pleasing, and impactful solutions that drive business growth in the digital age."
                   delay={100}
                   animateBy="words"
                   direction="top"
-                  className="text-base md:text-lg leading-relaxed mb-10 text-gray-300"
+                  className="text-base md:text-lg leading-relaxed mb-10 text-gray-300 text-justify"
                 />
 
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
