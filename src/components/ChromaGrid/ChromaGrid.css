@@ -6,11 +6,14 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
   grid-auto-rows: auto;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem; /* Sedikit diperlebar agar lebih lega */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem;
   box-sizing: border-box;
+  
+  /* Background dibuat transparan total */
+  background: transparent;
 
   --x: 50%;
   --y: 50%;
@@ -19,30 +22,17 @@
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .chroma-grid {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
-    grid-auto-rows: auto;
-    justify-content: center;
-    gap: 1rem;
     max-width: 1500px;
-    margin: 0 auto;
-    padding: 1rem;
-    box-sizing: border-box;
-
-    --x: 50%;
-    --y: 50%;
-    --r: 220px;
-    }
+    height: auto;
+    background: transparent;
+  }
 }
-
 
 @media (max-width: 1024px) {
   .chroma-grid {
     grid-template-columns: 320px;
-    gap: 0.75rem;
+    gap: 1rem;
     padding: 1rem;
   }
 }
@@ -55,17 +45,20 @@
   height: auto;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #333;
-  transition: border-color 0.3s ease;
+  /* Border disesuaikan agar tidak terlalu kontras jika bg transparan */
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  transition: all 0.3s ease;
   background: var(--card-gradient);
+  z-index: 5; /* Pastikan kartu di atas overlay agar bisa diklik */
 
   --mouse-x: 50%;
   --mouse-y: 50%;
-  --spotlight-color: rgba(255, 255, 255, 0.3);
+  --spotlight-color: rgba(255, 255, 255, 0.15);
 }
 
 .chroma-card:hover {
   border-color: var(--card-border);
+  transform: translateY(-5px); /* Efek melayang saat hover */
 }
 
 .chroma-card::before {
@@ -89,63 +82,62 @@
   position: relative;
   z-index: 1;
   flex: 1;
-  padding: 10px;
+  padding: 12px;
   box-sizing: border-box;
   background: transparent;
-  transition: background 0.3s ease;
 }
 
 .chroma-img-wrapper img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
   display: block;
 }
 
 .chroma-info {
   position: relative;
   z-index: 1;
-  padding: 1rem 1rem;
+  padding: 1rem 1.2rem;
   color: #fff;
   font-family: system-ui, sans-serif;
-  display: grid;
-  row-gap: rem;
-  column-gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.chroma-info .name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
 }
 
 .chroma-info .role,
 .chroma-info .handle {
   color: #aaa;
+  font-size: 0.85rem;
+  margin: 0;
 }
+
+/* --- BAGIAN PERBAIKAN OVERLAY --- */
 
 .chroma-overlay {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 3;
-  backdrop-filter: grayscale(1) brightness(0.78);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.78);
-  background: rgba(0, 0, 0, 0.001);
+  /* Hilangkan grayscale dan brightness yang bikin jadi kotak hitam */
+  backdrop-filter: none; 
+  -webkit-backdrop-filter: none;
+  background: transparent;
 
+  /* Masking dikurangi kekuatannya agar tidak menutupi background utama */
   mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
       transparent 0%,
-      transparent 15%,
-      rgba(0, 0, 0, 0.10) 30%,
-      rgba(0, 0, 0, 0.22) 45%,
-      rgba(0, 0, 0, 0.35) 60%,
-      rgba(0, 0, 0, 0.50) 75%,
-      rgba(0, 0, 0, 0.68) 88%,
-      white 100%);
+      rgba(0, 0, 0, 0.2) 100%);
   -webkit-mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
       transparent 0%,
-      transparent 15%,
-      rgba(0, 0, 0, 0.10) 30%,
-      rgba(0, 0, 0, 0.22) 45%,
-      rgba(0, 0, 0, 0.35) 60%,
-      rgba(0, 0, 0, 0.50) 75%,
-      rgba(0, 0, 0, 0.68) 88%,
-      white 100%);
+      rgba(0, 0, 0, 0.2) 100%);
 }
 
 .chroma-fade {
@@ -153,29 +145,11 @@
   inset: 0;
   pointer-events: none;
   z-index: 4;
-  backdrop-filter: grayscale(1) brightness(0.78);
-  -webkit-backdrop-filter: grayscale(1) brightness(0.78);
-  background: rgba(0, 0, 0, 0.001);
+  /* Hilangkan grayscale di sini juga */
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: transparent;
 
-  mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
-      white 0%,
-      white 15%,
-      rgba(255, 255, 255, 0.90) 30%,
-      rgba(255, 255, 255, 0.78) 45%,
-      rgba(255, 255, 255, 0.65) 60%,
-      rgba(255, 255, 255, 0.50) 75%,
-      rgba(255, 255, 255, 0.32) 88%,
-      transparent 100%);
-  -webkit-mask-image: radial-gradient(circle var(--r) at var(--x) var(--y),
-      white 0%,
-      white 15%,
-      rgba(255, 255, 255, 0.90) 30%,
-      rgba(255, 255, 255, 0.78) 45%,
-      rgba(255, 255, 255, 0.65) 60%,
-      rgba(255, 255, 255, 0.50) 75%,
-      rgba(255, 255, 255, 0.32) 88%,
-      transparent 100%);
-
-  opacity: 1;
+  opacity: 0.4; /* Turunkan opacity agar tidak terlalu pekat */
   transition: opacity 0.25s ease;
 }

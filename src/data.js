@@ -14,17 +14,18 @@ import Tools5 from "/assets/tools/bootstrap.png";
 import Tools6 from "/assets/tools/js.png";
 import Tools7 from "/assets/tools/nodejs.png";
 import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
+import Tools9 from "/assets/tools/java.png";
 import Tools10 from "/assets/tools/canva.png";
 import Tools11 from "/assets/tools/figma.png";
-import Tools12 from "/assets/tools/kotlin.png";
+import Tools12 from "/assets/tools/laravel.png";
 import Tools13 from "/assets/tools/firebase.png";
 import Tools14 from "/assets/tools/html.png";
 import Tools15 from "/assets/tools/css.png";
-import Tools16 from "/assets/tools/ts.png";
+import Tools16 from "/assets/tools/py.png";
 import Tools17 from "/assets/tools/php.png";
 import Tools18 from "/assets/tools/vite.png";
 import Tools19 from "/assets/tools/mysql.png";
+import Tools20 from "/assets/tools/wordpress.png";
 
 
 
@@ -35,6 +36,7 @@ export const listTools = [
     gambar: Tools1,
     nama: "VS Code",
     ket: "Code Editor",
+    persen: "Advanced",
     dad: "100",
   },
   {
@@ -42,6 +44,7 @@ export const listTools = [
     gambar: Tools2,
     nama: "React JS",
     ket: "Framework",
+    persen: "Intermediate",
     dad: "200",
   },
   {
@@ -49,6 +52,7 @@ export const listTools = [
     gambar: Tools3,
     nama: "Next JS",
     ket: "Framework",
+    persen: "Fundamental",
     dad: "300",
   },
   {
@@ -56,6 +60,7 @@ export const listTools = [
     gambar: Tools4,
     nama: "Tailwind CSS",
     ket: "Framework",
+    persen: "Intermediate",
     dad: "400",
   },
   {
@@ -63,6 +68,7 @@ export const listTools = [
     gambar: Tools5,
     nama: "Bootstrap",
     ket: "Framework",
+    persen: "Advanced",
     dad: "500",
   },
   {
@@ -70,6 +76,7 @@ export const listTools = [
     gambar: Tools6,
     nama: "Javascript",
     ket: "Language",
+    persen: "Intermediate",
     dad: "600",
   },
   {
@@ -77,6 +84,7 @@ export const listTools = [
     gambar: Tools7,
     nama: "Node JS",
     ket: "Javascript Runtime",
+    persen: "Intermediate",
     dad: "700",
   },
   {
@@ -84,13 +92,15 @@ export const listTools = [
     gambar: Tools8,
     nama: "Github",
     ket: "Repository",
+    persen: "Advanced",
     dad: "800",
   },
   {
     id: 9,
     gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
+    nama: "Java",
+    ket: "Language",
+    persen: "Intermediate",
     dad: "900",
   },
   {
@@ -98,6 +108,7 @@ export const listTools = [
     gambar: Tools10,
     nama: "Canva",
     ket: "Design App",
+    persen: "Intermediate",
     dad: "1000",
   },
   {
@@ -105,13 +116,15 @@ export const listTools = [
     gambar: Tools11,
     nama: "Figma",
     ket: "Design App",
+    persen: "Intermediate",
     dad: "1100",
   },
   {
     id: 12,
     gambar: Tools12,
-    nama: "Kotlin",
-    ket: "Language",
+    nama: "Laravel",
+    ket: "Framework",
+    persen: "Intermediate",
     dad: "1200",
   },
   {
@@ -119,6 +132,7 @@ export const listTools = [
     gambar: Tools13,
     nama: "Firebase",
     ket: "Framework",
+    persen: "Fundamental",
     dad: "1300",
   },
   {
@@ -126,6 +140,7 @@ export const listTools = [
     gambar: Tools14,
     nama: "HTML",
     ket: "Language",
+    persen: "Advanced",
     dad: "1400",
   },
   {
@@ -133,13 +148,15 @@ export const listTools = [
     gambar: Tools15,
     nama: "CSS",
     ket: "Language",
+    persen: "Intermediate",
     dad: "1500",
   },
   {
     id: 16,
     gambar: Tools16,
-    nama: "TypeScript",
+    nama: "Python",
     ket: "Language",
+    persen: "Fundamental",
     dad: "1600",
   },
   {
@@ -147,6 +164,7 @@ export const listTools = [
     gambar: Tools17,
     nama: "PHP",
     ket: "Language",
+    persen: "Intermediate",
     dad: "1700",
   },
   {
@@ -154,14 +172,24 @@ export const listTools = [
     gambar: Tools18,
     nama: "Vite",
     ket: "Framework",
+    persen: "Fundamental",
     dad: "1800",
   },
   {
     id: 19,
     gambar: Tools19,
     nama: "MySql",
-    ket: "Framework",
+    ket: "Database",
+    persen: "Intermediate",
     dad: "1900",
+  },
+  {
+    id: 20,
+    gambar: Tools20,
+    nama: "Wordpress",
+    ket: "CMS",
+    persen: "Advanced",
+    dad: "2000",
   },
 ];
 

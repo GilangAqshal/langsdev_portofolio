@@ -53,6 +53,10 @@ const listCertificates = [
     image: "assets/certificate/BWA.png",
     text: "BuildWithAngga",
   },
+  {
+    image: "assets/certificate/IBM.jpg",
+    text: "IBM Granite AI",
+  },
 ];
 
 
@@ -71,16 +75,7 @@ function App() {
   };
   // -------------------------
 
-  useEffect(() => {
-    const isReload =
-      performance.getEntriesByType("navigation")[0]?.type === "reload";
-
-    if (isReload) {
-      // Ambil path tanpa hash
-      const baseUrl = window.location.origin + "/portofolio/";
-      window.location.replace(baseUrl);
-    }
-  }, []);
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -245,50 +240,75 @@ I am deeply committed to integrating cutting-edge technologies, such as AI and M
           </div>
         </div>
         {/* akhir tentang */}
-
+        <br />
+        <br />
         {/* awal skills */}
-        <section className="py-16 bg-[#0a0a0a] overflow-hidden" id="skills">
+          <section className="py-16 bg-transparent overflow-hidden" id="skills">
           <div className="container mx-auto px-4 mb-10">
             <h2 className="text-3xl font-bold text-center text-white">SKills</h2>
           </div>
 
-          <div className="flex flex-col gap-8">
-            {/* Baris 1: Kanan ke Kiri */}
-            <div className="flex overflow-hidden group">
-              <div className="flex animate-marquee whitespace-nowrap pause-group-hover">
-                {[...listTools, ...listTools].map((skill, index) => (
-                  <div key={index} className="flex items-center gap-4 mx-4 p-4 bg-[#161616] rounded-xl border border-white/10 min-w-[200px]">
-                    <img src={skill.gambar} alt={skill.nama} className="w-10 h-10 object-contain" />
-                    <div className="flex flex-col">
-                      <span className="text-white font-medium">{skill.nama}</span>
-                      <span className="text-xs text-gray-500">{skill.ket}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+         <div className="flex flex-col gap-8">
+          {/* Baris 1: Kanan ke Kiri */}
+          <div className="flex overflow-hidden group">
+            <div className="flex animate-marquee whitespace-nowrap pause-group-hover">
+              {[...listTools, ...listTools].map((skill, index) => {
+                // Logic Penentuan Warna Berdasarkan Label Persen (Bisa diganti Fundamental/Intermediate/Advanced)
+                const getColor = (persen) => {
+                  if (persen === "Advanced") return "text-purple-400 font-bold";
+                  if (persen === "Intermediate") return "text-orange-400 font-bold";
+                  return "text-blue-400 font-bold"; // Default untuk Fundamental
+                };
 
-            {/* Baris 2: Kiri ke Kanan */}
-            <div className="flex overflow-hidden group">
-              <div className="flex animate-marquee-reverse whitespace-nowrap pause-group-hover">
-                {[...listTools, ...listTools].reverse().map((skill, index) => (
-                  <div key={index} className="flex items-center gap-4 mx-4 p-4 bg-[#161616] rounded-xl border border-white/10 min-w-[200px]">
+                return (
+                  <div key={index} className="flex items-center gap-4 mx-4 p-4 bg-transparent rounded-xl min-w-[200px]">
                     <img src={skill.gambar} alt={skill.nama} className="w-10 h-10 object-contain" />
                     <div className="flex flex-col">
                       <span className="text-white font-medium">{skill.nama}</span>
                       <span className="text-xs text-gray-500">{skill.ket}</span>
+                      {/* Tampilan Persen dengan Warna Otomatis */}
+                      <span className={`text-[11px] uppercase tracking-wider mt-1 ${getColor(skill.persen)}`}>
+                        {skill.persen}
+                      </span>
                     </div>
                   </div>
-                ))}
-              </div>
+                );
+              })}
             </div>
           </div>
+
+          {/* Baris 2: Kiri ke Kanan */}
+          <div className="flex overflow-hidden group">
+            <div className="flex animate-marquee-reverse whitespace-nowrap pause-group-hover">
+              {[...listTools, ...listTools].reverse().map((skill, index) => {
+                const getColor = (persen) => {
+                  if (persen === "Advanced") return "text-purple-400 font-bold";
+                  if (persen === "Intermediate") return "text-orange-400 font-bold";
+                  return "text-blue-400 font-bold";
+                };
+
+                return (
+                  <div key={index} className="flex items-center gap-4 mx-4 p-4 bg-transparent rounded-xl min-w-[200px]">
+                    <img src={skill.gambar} alt={skill.nama} className="w-10 h-10 object-contain" />
+                    <div className="flex flex-col">
+                      <span className="text-white font-medium">{skill.nama}</span>
+                      <span className="text-xs text-gray-500">{skill.ket}</span>
+                      <span className={`text-[11px] uppercase tracking-wider mt-1 ${getColor(skill.persen)}`}>
+                        {skill.persen}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
         </section>
         {/* akhir skills */}
 
         {/* awal Proyek */}
         <div
-          className="proyek mt-32 py-10"
+          className="proyek mt-5 py-10"
           id="project"
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -331,22 +351,22 @@ I am deeply committed to integrating cutting-edge technologies, such as AI and M
           </div>
         </div>
         {/* akhir Proyek */}
-
+              <br />
         {/* --- Awal Visual Showcase --- */}
         <div
-          className="mt-32"
+          className="mt-10"
           id="certificate"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-once="true"
         >
-          <h1 className="text-center text-4xl font-bold mb-10">Certificate</h1>
+          <h1 className="text-center text-4xl font-bold mb-4">Certificate</h1>
       
           {/* Container dengan tinggi tetap wajib ada agar OGL muncul */}
-          <div style={{ height: "600px", position: "relative" }}>
+          <div className="h-[300px] md:h-[450px] relative">
             <CircularGallery
               items={listCertificates}
-              bend={1.5}
+              bend={1.0}
               textColor="#ffffff"
               borderRadius={0.015}
               scrollSpeed={2}
@@ -355,7 +375,7 @@ I am deeply committed to integrating cutting-edge technologies, such as AI and M
           </div>
         </div>
         {/* --- Akhir Visual Showcase --- */}
-
+              <br />
         {/* --- PINDAHKAN SPOTIFY KE SINI --- */}
         <div className="spotify-widget flex items-center justify-center">
         <a href="https://open.spotify.com/user/x3qpuc6fibvgyszpnzpzqyxc5">
